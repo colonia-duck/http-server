@@ -23,7 +23,7 @@ struct Server server_constructor(int domain, int service, int protocol,
   server.socket = socket(domain, service, protocol);
 
   if (server.port == 0) {
-    perror("faild to connect to socket\n");
+    perror("Failed to connect to socket\n");
     exit(EXIT_FAILURE);
   }
 
